@@ -12,3 +12,7 @@ resource "local_file" "name" {
   filename = "demo.txt"
   content = var.demo
 }
+variable "demo" {
+    default = "name"
+    type = string
+}
